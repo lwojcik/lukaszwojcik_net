@@ -1,0 +1,23 @@
+image: samueldebruyn/debian-git
+
+pipelines:
+  custom: # Pipelines that are triggered manually
+    init: # -- First time init
+    - step:
+        script:
+          - apt-get update
+          - apt-get -qq install git-ftp
+          - git ftp init --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://$FTP_HOST
+    deploy-all: # -- Deploys all files from the selected commit
+    - step:
+        script:
+          - apt-get update
+          - apt-get -qq install git-ftp
+          - git ftp push --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://$FTP_HOST --all
+  branches: # Automated triggers on commits to branches
+    master: # -- When committing to mast branch
+    - step:
+        script:
+          - apt-get update
+          - apt-get -qq install git-ftp
+          - git ftp push --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://$FTP_HOST
