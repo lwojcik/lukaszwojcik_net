@@ -1,12 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Photo from '../components/Photo';
+
 const IndexPage = () => (
   <section className="page">
     <div className="container">
         <div className="row">
             <div className="col-md-3 text-center">
-              <img src="img/foto.jpg" alt="My photo" class="img-thumbnail" itemprop="photo" />
+              <Photo />
             </div>
             <div className="col-md-9">
               <h1><span itemprop="name">Łukasz Wójcik</span></h1>
