@@ -13,6 +13,8 @@ https://old.lukem.net/* https://lukaszwojcik.net/:splat 301!
 https://www.old.lukem.net/* https://lukaszwojcik.net/:splat 301!
 https://english.lukem.net/* https://lukaszwojcik.net/:splat 301!
 https://www.english.lukem.net/* https://lukaszwojcik.net/:splat 301!
+https://webpl.net/* https://lukaszwojcik.net/:splat 301!
+https://www.webpl.net/* https://lukaszwojcik.net/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://lukaszwojcik.netlify.com/* https://lukaszwojcik.net/:splat 301!
