@@ -1,3 +1,7 @@
-.page {
-  font-family: 'Lato', sans-serif;
-}
+/*
+Switch to https://www.npmjs.com/package/typeface-lato
+once @KyleMathews adds support for subsetted fonts
+zażółć gęślą jaźń ffs
+*/
+
+@import url('//fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext');

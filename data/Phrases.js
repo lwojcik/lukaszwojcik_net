@@ -1,7 +1,12 @@
 module.exports = {
-  main: {
+  global: {
+    newWindowTitleSuffix: ' - opens in a new window',
+    separator: '•',
+  },
+  index: {
     locationPrefix: 'based in',
     emailPrefix: 'E-mail',
+    pgpLinkText: 'My PGP key',
     socialLinksPrefix: 'Elsewhere',
   },
   pgp: {

@@ -2,12 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import 'typeface-lato'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
+const sectionAttributes = {
+  itemScope: 'true',
+  itemType: 'http://data-vocabulary.org/Person',
+}
+
+const style = {
+  fontFamily: 'Lato, Arial, Helvetica, sans-serif',
+  marginTop: '2rem',
+  marginBottom: '2rem',
+}
+
 const Layout = ({ children, data }) => (
-  <section className="page">
+  <section {...sectionAttributes} style={style}>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[

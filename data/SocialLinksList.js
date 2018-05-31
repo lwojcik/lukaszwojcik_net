@@ -1,8 +1,8 @@
-const SocialLinks = [
+module.exports = [
   {
     name: '12photos',
     url: 'https://12photos.eu',
-    title: '',
+    title: '12p',
     newWindow: true,
   },
   {
@@ -30,6 +30,3 @@ const SocialLinks = [
     newWindow: true,
   },
 ];
-
-module.exports = SocialLinks;
-
