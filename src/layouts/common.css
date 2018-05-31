@@ -1,0 +1,31 @@
+/*
+Switch to https://www.npmjs.com/package/typeface-lato
+once @KyleMathews adds support for subsetted fonts
+zażółć gęślą jaźń ffs :(
+*/
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  color: #ff0071;
+  font-weight: 900;
+  padding: 5px 6px;
+}
+
+a:hover,
+a:focus {
+  outline-color: #ff0071;
+  text-decoration: underline;
+}
+
+p, li, a.btn {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 36px;
+  margin: 0.5rem 0 1rem;
+}

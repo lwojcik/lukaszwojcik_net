@@ -1,0 +1,36 @@
+{
+  "name": "lukaszwojcik_net",
+  "description": "My personal homepage",
+  "version": "1.0.0",
+  "author": "Łukasz Wójcik <hello.github@lukaszwojcik.net>",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "gatsby": "1.9.247",
+    "gatsby-link": "1.6.40",
+    "gatsby-plugin-react-helmet": "2.0.10",
+    "lato-latin-npm-webfont": "0.0.3",
+    "react-helmet": "5.2.0",
+    "reactstrap": "6.0.1"
+  },
+  "keywords": [
+    "łukasz wójcik",
+    "homepage",
+    "web developer",
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "1.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lwojcik/lukaszwojcik_net"
+  }
+}

@@ -1,43 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<title>My PGP key - Łukasz Wójcik</title>
-<meta name="description" content="Download and use my PGP key to send me an encrypted message." />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">    
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="theme-color" content="#000000">
-<meta property="og:image:width" content="200">
-<meta property="og:image:height" content="200">
-<meta property="og:description" content="Download and use my PGP key to send me an encrypted message.">
-<meta property="og:url" content="https://lukaszwojcik.net/">
-<meta property="og:image" content="https://lukaszwojcik.net/img/foto.jpg">
-<meta property="og:title" content="My PGP key - Łukasz Wójcik">
-</head> 
-
-<body>
-<section class="page pgp-key-page">
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 text-left">
-            <a href="/" class="back">&larr; back to main page</a>
-            <h1>My PGP / GPG encryption key</h1>
-            <p>Use the key below to send me an encrypted message.</p>
-            <a class="key-link" href="pgp.asc" title="pgp.asc, 3.05 KB">Download my PGP key</a>
-            <pre>pub 4096R/0D867EFD 2017-11-10    
+module.exports = {
+    header: `pub 4096R/0D867EFD 2017-11-10    
     Key fingerprint = EAA6 238B 2153 2614 1232 A5FD 8076 5B60 0D86 7EFD
-uid Lukasz Wojcik &lt;hello@lukaszwojcik.net&gt;
-sub 4096R/3DBE4C83 2017-11-10</pre>
-            <pre class="preKey">-----BEGIN PGP PUBLIC KEY BLOCK-----
+uid Lukasz Wojcik <hello@lukaszwojcik.net>
+sub 4096R/3DBE4C83 2017-11-10`,
+    body: `-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xsFNBFoF2EkBEACyLiS2W4PPv8ccaqQiUaqadBns44cqaO5oFxtj/Ru/Y8bT
 glh355xKUcSvTNrJUCvF2zwslCBuuPMmcCPihx/h4+jkSvU4WZSMrunpbPdE
@@ -90,12 +56,5 @@ IVa9FzeQBVYhi6+c1L5Hou++wFGbGTjnsOpo0te73t89f+yQM+5n36Y+54p9
 y9mkxmVymml4Ozp8f//Fu+FgFvvpBgvBUvgVSfO+YAQR/LbZxgH3DwZFRVvD
 gMCWYEQ=
 =Judg
------END PGP PUBLIC KEY BLOCK-----</pre>
-
-        </div>
-        
-    </div>
-</div>
-</section>
-</body>
-</html> 
+-----END PGP PUBLIC KEY BLOCK-----`
+};
