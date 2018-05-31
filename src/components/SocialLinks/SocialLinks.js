@@ -15,7 +15,7 @@ const listItemStyles = {
   display: 'inline-block',
   listStyle: 'none',
   margin: '0',
-  padding: '0',
+  padding: '5px 0',
 }
 
 const SocialLinks = ({ list, separator }) => {

@@ -56,6 +56,5 @@ IVa9FzeQBVYhi6+c1L5Hou++wFGbGTjnsOpo0te73t89f+yQM+5n36Y+54p9
 y9mkxmVymml4Ozp8f//Fu+FgFvvpBgvBUvgVSfO+YAQR/LbZxgH3DwZFRVvD
 gMCWYEQ=
 =Judg
------END PGP PUBLIC KEY BLOCK-----
-        `
+-----END PGP PUBLIC KEY BLOCK-----`
 };

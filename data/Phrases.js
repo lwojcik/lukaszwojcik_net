@@ -12,7 +12,7 @@ module.exports = {
   pgp: {
     title: 'My PGP / GPG encryption key',
     text: 'Use the key below to send me an encrypted message.',
-    backToIndex: '&larr; back to main page',
+    backToIndex: '← back to main page',
     downloadBtn: {
       url: '/pgp.asc',
       text: 'Download my PGP key',

@@ -12,7 +12,7 @@ a:focus,
 a:visited {
   color: #ff0071;
   font-weight: bold;
-  padding: 3px 6px;
+  padding: 5px 6px;
 }
 
 a:hover,
@@ -29,5 +29,5 @@ p, li, a.btn {
 h1 {
   font-weight: bold;
   font-size: 36px;
-  margin-top: 1.25rem;
+  margin: 0.5rem 0 1rem;
 }

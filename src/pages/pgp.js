@@ -7,6 +7,20 @@ import config from '../../data/SiteConfig';
 import Phrases from '../../data/Phrases';
 import PGPKey from '../../data/PGPKey';
 
+import DownloadButton from '../components/DownloadButton/DownloadButton'
+
+const styles = {
+  h1: {
+    margin: '2rem 0',
+  },
+  p: {
+    margin: '2rem 0',
+  },
+  pgpKeyBody: {
+    marginTop: '2rem',
+  }
+}
+
 const PGPPage = () => (
   <section>
     <Helmet
@@ -20,12 +34,15 @@ const PGPPage = () => (
     <Container>
       <Row>
         <Col md="12" sm="12">
-          <Link to='/'>← back to main page</Link>
-          <h1>My PGP / GPG encryption key</h1>
-          <p>Use the key below to send me an encrypted message.</p>
-          <a className="key-link" href="pgp.asc" title="pgp.asc, 3.05 KB">Download my PGP key</a>
+          <Link to='/'>{Phrases.pgp.backToIndex}</Link>
+          <h1 style={styles.h1}>{Phrases.pgp.title}</h1>
+          <p style={styles.p}>{Phrases.pgp.text}</p>
+          <DownloadButton
+            url={Phrases.pgp.downloadBtn.url}
+            text={Phrases.pgp.downloadBtn.text}
+          />
           <pre>{PGPKey.header}</pre>
-          <pre>{PGPKey.body}</pre>
+          <pre style={styles.pgpKeyBody}>{PGPKey.body}</pre>
         </Col>
       </Row>
     </Container>
