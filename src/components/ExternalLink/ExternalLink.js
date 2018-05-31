@@ -8,7 +8,7 @@ const ExternalLink = ({ to, title, newWindow, children }) => {
   const linkTitle = isTargetBlank ? `${title}${Phrases.global.newWindowTitleSuffix}` : title; 
 
   const linkAttributes = {
-    rel: 'noopener noreferrer',
+    rel: 'external noopener noreferrer',
   }
 
   return (

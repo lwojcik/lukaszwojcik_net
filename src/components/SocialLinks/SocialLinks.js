@@ -10,12 +10,12 @@ const styles = {
   padding: '0',
 }
 
-const SocialLinks = ({ list }) => {
+const SocialLinks = ({ list, separator }) => {
   const linkList = list.map(function(link, index) {
     if (index === list.length - 1) {
       return (
         <li key={index} style={styles}>
-          <ExternalLink to={link.url}>
+          <ExternalLink to={link.url} title={link.title} newWindow={true}>
             {link.name}
           </ExternalLink>
         </li>
@@ -23,19 +23,22 @@ const SocialLinks = ({ list }) => {
     } else {
       return (
         <li key={index} style={styles}>
-          <ExternalLink to={link.url}>
+          <ExternalLink to={link.url} title={link.title} newWindow={link.newWindow}>
             {link.name}
           </ExternalLink>
-          <Separator />
+          <Separator content={separator} />
         </li>
       )
     }
   });
 
-  return ( 
-    <ul style={styles}>
-      {linkList}
-    </ul>
+  return (
+    <div>
+      <p style={{ fontWeight: 'bold', display: 'inline' }}>Elsewhere:{' '}</p>
+      <ul style={styles}>
+        {linkList}
+      </ul>
+    </div>
   );
 };
 

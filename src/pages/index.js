@@ -11,7 +11,6 @@ import AuthorName from '../components/AuthorName/AuthorName';
 import AuthorPhoto from '../components/AuthorPhoto/AuthorPhoto';
 import AuthorTagLine from '../components/AuthorTagLine/AuthorTagLine';
 import AuthorEmail from '../components/AuthorEmail/AuthorEmail';
-import PGPPageLink from '../components/PGPPageLink/PGPPageLink';
 import Separator from '../components/Separator/Separator'
 import SocialLinks from '../components/SocialLinks/SocialLinks';
 
@@ -36,11 +35,11 @@ const IndexPage = () => (
         <p>
           <AuthorEmail prefix={Phrases.index.emailPrefix} email={author.email} />
           <Separator content={Phrases.global.separator} />
-          <Link to={SiteConfig.pgpPageUrl}>
+          <Link to={SiteConfig.pgpPage.url} title={SiteConfig.pgpPage.title}>
             {Phrases.index.pgpLinkText}
           </Link>
         </p>
-        <SocialLinks list={SocialLinksList} />
+        <SocialLinks list={SocialLinksList} separator={Phrases.global.separator} />
       </Col>
     </Row>
   </Container>

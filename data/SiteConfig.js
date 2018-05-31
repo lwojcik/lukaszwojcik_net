@@ -4,7 +4,10 @@ const SiteConfig = {
     description: 'Web developer from Poland. Homepage, other projects, contact details.',
   },
   pathPrefix: "/",
-  pgpPageUrl: '/pgp',
+  pgpPage: {
+    url: '/pgp',
+    title: '',
+  },
 };
 
 module.exports = SiteConfig;
