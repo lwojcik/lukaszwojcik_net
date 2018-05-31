@@ -4,9 +4,10 @@ const SiteConfig = {
     description: 'Web developer from Poland. Homepage, other projects, contact details.',
   },
   pathPrefix: "/",
-  pgpPage: {
-    url: '/pgp',
-    title: '',
+  indexPage: {
+    emailTitle: 'My email',
+    pgpPageUrl: '/pgp',
+    pgpPageTitle: 'My PGP / GPG encryption key'
   },
 };
 

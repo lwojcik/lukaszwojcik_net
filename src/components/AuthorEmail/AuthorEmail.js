@@ -3,12 +3,12 @@ import Link from 'gatsby-link'
 
 import MailLink from '../MailLink/MailLink'
 
-const AuthorEmail = (props) => (
+const AuthorEmail = ({ prefix, email, title }) => (
   <span>
-    <strong>{props.prefix}:</strong>
+    <strong style={{ paddingRight: '5px' }}>{prefix}:</strong>
     {' '}
-    <MailLink to={props.email} title={props.title}>
-      {props.email}
+    <MailLink to={email} title={title}>
+      {email}
     </MailLink>
   </span>
 )

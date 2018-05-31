@@ -1,9 +1,9 @@
-module.exports = `
-pub 4096R/0D867EFD 2017-11-10    
+module.exports = {
+    header: `pub 4096R/0D867EFD 2017-11-10    
     Key fingerprint = EAA6 238B 2153 2614 1232 A5FD 8076 5B60 0D86 7EFD
 uid Lukasz Wojcik <hello@lukaszwojcik.net>
-sub 4096R/3DBE4C83 2017-11-10
------BEGIN PGP PUBLIC KEY BLOCK-----
+sub 4096R/3DBE4C83 2017-11-10`,
+    body: `-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xsFNBFoF2EkBEACyLiS2W4PPv8ccaqQiUaqadBns44cqaO5oFxtj/Ru/Y8bT
 glh355xKUcSvTNrJUCvF2zwslCBuuPMmcCPihx/h4+jkSvU4WZSMrunpbPdE
@@ -57,4 +57,5 @@ y9mkxmVymml4Ozp8f//Fu+FgFvvpBgvBUvgVSfO+YAQR/LbZxgH3DwZFRVvD
 gMCWYEQ=
 =Judg
 -----END PGP PUBLIC KEY BLOCK-----
-`;
+        `
+};

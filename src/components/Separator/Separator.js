@@ -6,8 +6,12 @@ const attribs = {
   role: 'presentation'
 }
 
+const styles = {
+  margin: '0 8px'
+}
+
 const Separator = ({ content }) => (
-  <span {...attribs}>{' '}{content}{' '}</span>
+  <span {...attribs} style={styles}>{content}</span>
 )
 
 Separator.propTypes = {

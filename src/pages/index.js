@@ -14,14 +14,13 @@ import AuthorEmail from '../components/AuthorEmail/AuthorEmail';
 import Separator from '../components/Separator/Separator'
 import SocialLinks from '../components/SocialLinks/SocialLinks';
 
-
 const IndexPage = () => (
   <Container>
     <Row>
-      <Col md="3">
+      <Col md="3" sm="12">
         <AuthorPhoto imgSrc={author.photo.imgSrc} imgAlt={author.photo.imgAlt} />
       </Col>
-      <Col md="9">
+      <Col md="9" sm="12">
         <h1>
           <AuthorName name={author.name} />
         </h1>
@@ -33,9 +32,9 @@ const IndexPage = () => (
           />
         </p>
         <p>
-          <AuthorEmail prefix={Phrases.index.emailPrefix} email={author.email} />
+          <AuthorEmail prefix={Phrases.index.emailPrefix} email={author.email} title={SiteConfig.indexPage.emailTitle} />
           <Separator content={Phrases.global.separator} />
-          <Link to={SiteConfig.pgpPage.url} title={SiteConfig.pgpPage.title}>
+          <Link to={SiteConfig.indexPage.pgpPageUrl} title={SiteConfig.indexPage.pgpPageTitle} style={{ display: 'inline-block' }}>
             {Phrases.index.pgpLinkText}
           </Link>
         </p>
