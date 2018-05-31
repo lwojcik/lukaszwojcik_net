@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
@@ -16,18 +15,10 @@ const style = {
   marginBottom: '2rem',
 }
 
-const Layout = ({ children, data }) => (
-  <section {...sectionAttributes} style={style}>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: data.site.siteMetadata.description },
-        { property: 'og:title', content: data.site.siteMetadata.title },
-        { property: 'og:description', content: data.site.siteMetadata.description },
-      ]}
-    />
+const Layout = ({ children }) => (
+  <div style={style}>
     {children()}
-  </section>
+  </div>
 )
 
 Layout.propTypes = {
@@ -35,14 +26,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-export const query = graphql`
-  query MetaElementsQuery {
-    site {
-      siteMetadata {
-        title,
-        description
-      }
-    }
-  }
-`

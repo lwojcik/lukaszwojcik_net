@@ -12,8 +12,12 @@ const style = {
   height: 'auto',
 }
 
+const attributes = {
+  itemProp: 'photo'
+}
+
 const AuthorPhoto = ({ imgSrc, imgAlt }) => (
-  <img style={style} src={imgSrc} alt={imgAlt} />
+  <img {...attributes} style={style} src={imgSrc} alt={imgAlt} />
 )
 
 export default AuthorPhoto

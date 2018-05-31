@@ -1,17 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const style = {
-  fontWeight: '900',
-}
-
-const spanAttribs = {
+const attributes = {
   itemProp: 'name',
 }
 
-const AuthorName = (props) => (
-  <span {...spanAttribs} style={style}>
-    {props.name}
+const AuthorName = ({ name }) => (
+  <span {...attributes}>
+    {name}
   </span>
 );
 
