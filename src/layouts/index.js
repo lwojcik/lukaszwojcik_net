@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './index.css'
+
+import './common.css'
 
 const sectionAttributes = {
   itemScope: 'true',
