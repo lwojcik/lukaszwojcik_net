@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import 'lato-latin-npm-webfont';
 import 'bootstrap/dist/css/bootstrap.min.css'
-
 import './common.css'
 
 const sectionAttributes = {

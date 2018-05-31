@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+
+import Helmet from 'react-helmet'
+
+const styles = {
+  textAlign: 'center',
+}
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  <div style={styles}>
+    <Helmet title='Error 404 - Page not found' />
+    <h1>ERROR 404</h1>
+    <p>This page doesn't exist.</p>
+    <a href="/">Jump to main page &rarr;</a>
   </div>
 )
 

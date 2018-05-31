@@ -12,6 +12,8 @@ module.exports = {
   photo: {
     imgSrc: photo,
     imgAlt: 'My photo',
+    imgWidth: 200,
+    imgHeight: 200,
   },
   email: 'hello@lukaszwojcik.net',
 };

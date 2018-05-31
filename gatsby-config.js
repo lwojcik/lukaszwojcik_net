@@ -9,5 +9,5 @@ module.exports = {
     title: config.metaElements.title,
     description: config.metaElements.description,
   },
-  plugins: ["gatsby-plugin-react-helmet"],
+  plugins: [ "gatsby-plugin-react-helmet" ],
 };

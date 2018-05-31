@@ -4,7 +4,7 @@ a.downloadButton:visited {
   display: inline-block;
   border: 2px solid #ff0071;
   padding: 5px 20px;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 120%;
   -webkit-transition: background 0.2s, color 0.2s; /* Safari */
   transition: background 0.2s, color 0.2s;

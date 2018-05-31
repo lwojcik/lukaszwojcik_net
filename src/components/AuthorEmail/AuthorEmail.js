@@ -5,7 +5,7 @@ import MailLink from '../MailLink/MailLink'
 
 const AuthorEmail = ({ prefix, email, title }) => (
   <span>
-    <strong style={{ paddingRight: '5px' }}>{prefix}:</strong>
+    <strong style={{ fontWeight: '900', paddingRight: '5px' }}>{prefix}:</strong>
     {' '}
     <MailLink to={email} title={title}>
       {email}

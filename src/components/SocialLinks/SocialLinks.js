@@ -42,7 +42,7 @@ const SocialLinks = ({ list, separator }) => {
 
   return (
     <div>
-      <p style={{ fontWeight: 'bold', display: 'inline', paddingRight: '5px' }}>Elsewhere:{' '}</p>
+      <p style={{ fontWeight: '900', display: 'inline', paddingRight: '5px' }}>Elsewhere:{' '}</p>
       <ul style={listStyles}>
         {linkList}
       </ul>

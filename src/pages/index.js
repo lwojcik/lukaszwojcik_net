@@ -3,9 +3,10 @@ import Link from 'gatsby-link'
 import { Container, Row, Col } from 'reactstrap';
 import Helmet from 'react-helmet'
 
-import author from '../../data/author';
+import Author from '../../data/AuthorConfig';
 import SiteConfig from '../../data/SiteConfig';
 import Phrases from '../../data/Phrases';
+import SharedMetaTags from '../../data/SharedMetaTags';
 import SocialLinksList from '../../data/SocialLinksList';
 
 import AuthorName from '../components/AuthorName/AuthorName';
@@ -28,28 +29,38 @@ const IndexPage = ({ data }) => (
       { name: 'description', content: data.site.siteMetadata.description },
       { property: 'og:title', content: data.site.siteMetadata.title },
       { property: 'og:description', content: data.site.siteMetadata.description },
-    ]}
+      { property: 'og:url', content: SiteConfig.siteUrl },
+    ].concat(SharedMetaTags.meta)}
+    link={SharedMetaTags.link}
     />
     <Container>
       <Row>
         <Col md="3" sm="12">
-          <AuthorPhoto imgSrc={author.photo.imgSrc} imgAlt={author.photo.imgAlt} />
+          <AuthorPhoto imgSrc={Author.photo.imgSrc} imgAlt={Author.photo.imgAlt} />
         </Col>
         <Col md="9" sm="12">
           <h1>
-            <AuthorName name={author.name} />
+            <AuthorName name={Author.name} />
           </h1>
           <p>
             <AuthorTagLine
-              occupation={author.occupation}
+              occupation={Author.occupation}
               locationPrefix={Phrases.index.locationPrefix}
-              location={author.location}
+              location={Author.location}
             />
           </p>
           <p>
-            <AuthorEmail prefix={Phrases.index.emailPrefix} email={author.email} title={SiteConfig.indexPage.emailTitle} />
+            <AuthorEmail
+              prefix={Phrases.index.emailPrefix}
+              email={Author.email}
+              title={SiteConfig.indexPage.emailTitle}
+            />
             <Separator content={Phrases.global.separator} />
-            <Link to={SiteConfig.indexPage.pgpPageUrl} title={SiteConfig.indexPage.pgpPageTitle} style={{ display: 'inline-block' }}>
+            <Link
+              to={SiteConfig.indexPage.pgpPageUrl}
+              title={SiteConfig.indexPage.pgpPageTitle}
+              style={{ display: 'inline-block' }}
+            >
               {Phrases.index.pgpLinkText}
             </Link>
           </p>

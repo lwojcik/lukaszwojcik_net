@@ -3,8 +3,10 @@ import Link from 'gatsby-link'
 import { Container, Row, Col } from 'reactstrap';
 import Helmet from 'react-helmet'
 
-import config from '../../data/SiteConfig';
+import Author from '../../data/AuthorConfig';
+import SiteConfig from '../../data/SiteConfig';
 import Phrases from '../../data/Phrases';
+import SharedMetaTags from '../../data/SharedMetaTags';
 import PGPKey from '../../data/PGPKey';
 
 import DownloadButton from '../components/DownloadButton/DownloadButton'
@@ -19,17 +21,21 @@ const styles = {
   pgpKeyBody: {
     marginTop: '2rem',
   }
+  
 }
+
+const metaTags = [
+  { name: 'description', content: SiteConfig.pgpPage.meta.title },
+  { property: 'og:title', content: SiteConfig.pgpPage.meta.title },
+  { property: 'og:description', content: SiteConfig.pgpPage.meta.description },
+];
 
 const PGPPage = () => (
   <section>
     <Helmet
-    title={config.pgpPage.meta.title}
-    meta={[
-      { name: 'description', content: config.pgpPage.meta.title },
-      { property: 'og:title', content: config.pgpPage.meta.title },
-      { property: 'og:description', content: config.pgpPage.meta.description },
-    ]}
+    title={SiteConfig.pgpPage.meta.title}
+    meta={metaTags.concat(SharedMetaTags.meta)}
+    link={SharedMetaTags.link}
     />
     <Container>
       <Row>
