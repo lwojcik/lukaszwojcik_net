@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "4.1.1",
-    "gatsby": "1.9.260",
+    "gatsby": "1.9.266",
     "gatsby-link": "1.6.40",
     "gatsby-plugin-react-helmet": "2.0.10",
     "lato-latin-npm-webfont": "0.0.3",
