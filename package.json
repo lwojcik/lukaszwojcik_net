@@ -1,20 +1,22 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "lukaszwojcik_net",
+  "description": "My personal homepage",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Łukasz Wójcik <hello.github@lukaszwojcik.net>",
+  "private": true,
   "dependencies": {
     "bootstrap": "4.1.1",
     "gatsby": "1.9.247",
     "gatsby-link": "1.6.40",
     "gatsby-plugin-react-helmet": "2.0.10",
-    "gatsby-remark-embed-snippet": "1.0.22",
-    "gatsby-source-filesystem": "1.5.38",
     "lato-latin-npm-webfont": "0.0.3",
     "react-helmet": "5.2.0",
     "reactstrap": "6.0.1"
   },
   "keywords": [
+    "łukasz wójcik",
+    "homepage",
+    "web developer",
     "gatsby"
   ],
   "license": "MIT",
@@ -29,6 +31,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/lwojcik/lukaszwojcik_net"
   }
 }
