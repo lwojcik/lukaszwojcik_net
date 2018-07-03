@@ -12,7 +12,8 @@
     "gatsby-plugin-react-next": "1.0.11",
     "lato-latin-npm-webfont": "0.0.3",
     "react-helmet": "5.2.0",
-    "reactstrap": "6.1.0"
+    "reactstrap": "6.1.0",
+    "snyk": "^1.88.0"
   },
   "keywords": [
     "łukasz wójcik",
@@ -25,7 +26,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "eslint": "4.19.1",
@@ -38,5 +41,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lwojcik/lukaszwojcik_net"
-  }
+  },
+  "snyk": true
 }
