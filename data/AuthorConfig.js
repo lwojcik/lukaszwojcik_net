@@ -15,5 +15,5 @@ module.exports = {
     imgWidth: 200,
     imgHeight: 200,
   },
-  email: 'hello@lukaszwojcik.net',
+  email: 'lwojcik@lukem.net',
 };

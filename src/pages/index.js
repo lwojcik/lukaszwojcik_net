@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 import { Container, Row, Col } from 'reactstrap';
-import Helmet from 'react-helmet'
+import Helmet from 'react-helmet';
 
 import Author from '../../data/AuthorConfig';
 import SiteConfig from '../../data/SiteConfig';
@@ -13,7 +13,7 @@ import AuthorName from '../components/AuthorName/AuthorName';
 import AuthorPhoto from '../components/AuthorPhoto/AuthorPhoto';
 import AuthorTagLine from '../components/AuthorTagLine/AuthorTagLine';
 import AuthorEmail from '../components/AuthorEmail/AuthorEmail';
-import Separator from '../components/Separator/Separator'
+import Separator from '../components/Separator/Separator';
 import SocialLinks from '../components/SocialLinks/SocialLinks';
 
 const sectionAttributes = {
@@ -24,14 +24,14 @@ const sectionAttributes = {
 const IndexPage = ({ data }) => (
   <section {...sectionAttributes}>
     <Helmet
-    title={data.site.siteMetadata.title}
-    meta={[
-      { name: 'description', content: data.site.siteMetadata.description },
-      { property: 'og:title', content: data.site.siteMetadata.title },
-      { property: 'og:description', content: data.site.siteMetadata.description },
-      { property: 'og:url', content: SiteConfig.siteUrl },
-    ].concat(SharedMetaTags.meta)}
-    link={SharedMetaTags.link}
+      title={data.site.siteMetadata.title}
+      meta={[
+        { name: 'description', content: data.site.siteMetadata.description },
+        { property: 'og:title', content: data.site.siteMetadata.title },
+        { property: 'og:description', content: data.site.siteMetadata.description },
+        { property: 'og:url', content: SiteConfig.siteUrl },
+      ].concat(SharedMetaTags.meta)}
+      link={SharedMetaTags.link}
     />
     <Container>
       <Row>
