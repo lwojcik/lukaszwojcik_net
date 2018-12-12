@@ -1,20 +1,16 @@
 # Redirect domain aliases to primary domain
-https://lukem.net/* https://lukaszwojcik.net/:splat 301!
-https://blog.lukem.net/* https://lukaszwojcik.net/:splat 301!
-https://www.lukem.net/* https://lukaszwojcik.net/:splat 301!
-https://lajf.eu/* https://lukaszwojcik.net/:splat 301!
-https://www.lajf.eu/* https://lukaszwojcik.net/:splat 301!
-https://blog.lukaszwojcik.net/* https://lukaszwojcik.net/:splat 301!
-https://weblog.lukem.net/* https://lukaszwojcik.net/:splat 301!
-https://www.blog.lukem.net/* https://lukaszwojcik.net/:splat 301!
-https://www.blog.lukaszwojcik.net/* https://lukaszwojcik.net/:splat 301!
-https://after.lajf.eu/* https://lukaszwojcik.net/:splat 301!
-https://old.lukem.net/* https://lukaszwojcik.net/:splat 301!
-https://www.old.lukem.net/* https://lukaszwojcik.net/:splat 301!
-https://english.lukem.net/* https://lukaszwojcik.net/:splat 301!
-https://www.english.lukem.net/* https://lukaszwojcik.net/:splat 301!
-https://webpl.net/* https://lukaszwojcik.net/:splat 301!
-https://www.webpl.net/* https://lukaszwojcik.net/:splat 301!
+https://blog.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://blog.lukaszwojcik.net/* https://www.lukaszwojcik.net/:splat 301!
+https://weblog.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.blog.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.blog.lukaszwojcik.net/* https://www.lukaszwojcik.net/:splat 301!
+https://after.lajf.eu/* https://www.lukaszwojcik.net/:splat 301!
+https://old.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.old.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://english.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.english.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://webpl.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.webpl.net/* https://www.lukaszwojcik.net/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://lukaszwojcik.netlify.com/* https://lukaszwojcik.net/:splat 301!
+https://lukaszwojcik.netlify.com/* https://www.lukaszwojcik.net/:splat 301!
