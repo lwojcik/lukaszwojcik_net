@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,900&amp;subset=latin-ext");
-
 /*
 Switch to https://www.npmjs.com/package/typeface-lato
 once @KyleMathews adds support for subsetted fonts
@@ -42,7 +40,7 @@ h1 {
 }
 
 .mainSection {
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
