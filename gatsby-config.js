@@ -1,16 +1,20 @@
-const config = require('./data/SiteConfig');
-
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
-
 module.exports = {
-  pathPrefix: config.pathPrefix,
   siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
-    title: config.metaElements.title,
-    description: config.metaElements.description,
+    title: 'Łukasz Wójcik -- web developer',
+    description:
+      'Web developer from Poland. Homepage, current projects, contact details.',
+    siteUrl: 'https://www.lukaszwojcik.net',
+    author: 'jaxx2104',
+    twitter: 'jaxx2104',
+    adsense: '',
   },
+  pathPrefix: '/',
   plugins: [
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-react-next',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-sitemap',
   ],
-};
+}

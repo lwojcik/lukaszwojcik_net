@@ -1,4 +1,4 @@
-module.exports = [
+const SocialLinksList = [
   {
     name: '12photos',
     url: 'https://12photos.eu',
@@ -30,3 +30,5 @@ module.exports = [
     newWindow: true,
   },
 ];
+
+export default SocialLinksList;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import { graphql } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
 import Helmet from 'react-helmet';
 
@@ -16,19 +17,26 @@ import AuthorEmail from '../components/AuthorEmail/AuthorEmail';
 import Separator from '../components/Separator/Separator';
 import SocialLinks from '../components/SocialLinks/SocialLinks';
 
+import 'lato-latin-npm-webfont'
+import '../scss/gatstrap.scss'
+import '../templates/common.css'
+
 const sectionAttributes = {
-  itemScope: 'true',
+  itemScope: true,
   itemType: 'http://data-vocabulary.org/Person',
 }
 
 const IndexPage = ({ data }) => (
-  <section {...sectionAttributes}>
+  <section {...sectionAttributes} className="mainSection">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: data.site.siteMetadata.description },
         { property: 'og:title', content: data.site.siteMetadata.title },
-        { property: 'og:description', content: data.site.siteMetadata.description },
+        {
+          property: 'og:description',
+          content: data.site.siteMetadata.description,
+        },
         { property: 'og:url', content: SiteConfig.siteUrl },
       ].concat(SharedMetaTags.meta)}
       link={SharedMetaTags.link}
@@ -36,7 +44,10 @@ const IndexPage = ({ data }) => (
     <Container>
       <Row>
         <Col md="3" sm="12">
-          <AuthorPhoto imgSrc={Author.photo.imgSrc} imgAlt={Author.photo.imgAlt} />
+          <AuthorPhoto
+            imgSrc={Author.photo.imgSrc}
+            imgAlt={Author.photo.imgAlt}
+          />
         </Col>
         <Col md="9" sm="12">
           <h1>
@@ -64,7 +75,10 @@ const IndexPage = ({ data }) => (
               {Phrases.index.pgpLinkText}
             </Link>
           </p>
-          <SocialLinks list={SocialLinksList} separator={Phrases.global.separator} />
+          <SocialLinks
+            list={SocialLinksList}
+            separator={Phrases.global.separator}
+          />
         </Col>
       </Row>
     </Container>
@@ -77,7 +91,7 @@ export const query = graphql`
   query MetaElementsQuery {
     site {
       siteMetadata {
-        title,
+        title
         description
       }
     }

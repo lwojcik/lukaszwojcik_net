@@ -1,7 +1,5 @@
 import React from 'react'
 
-import ExternalLink from '../ExternalLink/ExternalLink'
-
 import './DownloadButton.css';
 
 const DownloadButton = ({ list, separator }) => {

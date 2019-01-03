@@ -1,6 +1,6 @@
 import photo from './photo.jpg';
 
-module.exports = {
+const AuthorConfig = {
   name: 'Łukasz Wójcik',
   occupation: 'Web developer',
   location: {
@@ -17,3 +17,5 @@ module.exports = {
   },
   email: 'lwojcik@lukem.net',
 };
+
+export default AuthorConfig;

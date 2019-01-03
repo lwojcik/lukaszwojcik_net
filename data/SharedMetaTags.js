@@ -1,6 +1,6 @@
 import Author from './AuthorConfig';
 
-module.exports = {
+const SharedMetaTags = {
   meta: [
     {
       property: 'og:image',
@@ -50,3 +50,5 @@ module.exports = {
     },
   ],
 }
+
+export default SharedMetaTags;

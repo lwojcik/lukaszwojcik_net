@@ -1,4 +1,4 @@
-module.exports = {
+const Phrases = {
   global: {
     newWindowTitleSuffix: ' - opens in a new window',
     separator: '•',
@@ -19,3 +19,5 @@ module.exports = {
     },
   }
 };
+
+export default Phrases;

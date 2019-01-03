@@ -1,8 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900&amp;subset=latin-ext");
+
 /*
 Switch to https://www.npmjs.com/package/typeface-lato
 once @KyleMathews adds support for subsetted fonts
 zażółć gęślą jaźń ffs :(
 */
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
 
 a,
 a:hover,
@@ -27,5 +39,10 @@ p, li, a.btn {
 h1 {
   font-weight: 900;
   font-size: 36px;
-  margin: 0.5rem 0 1rem;
+}
+
+.mainSection {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
