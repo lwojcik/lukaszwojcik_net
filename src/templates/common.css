@@ -6,12 +6,14 @@ zażółć gęślą jaźń ffs :(
 
 body {
   margin: 0;
+  padding: 0;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
   background-color: #fff;
+  height: auto;
 }
 
 a,
@@ -29,7 +31,9 @@ a:focus {
   text-decoration: underline;
 }
 
-p, li, a.btn {
+p,
+li,
+a.btn {
   font-size: 1.3rem;
   line-height: 1.4;
 }
@@ -40,7 +44,7 @@ h1 {
 }
 
 .mainSection {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
