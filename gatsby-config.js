@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'Łukasz Wójcik -- web developer',
-    description:
-      'Web developer from Poland. Homepage, current projects, contact details.',
+    description: 'Web developer from Poland. Homepage, current projects, contact details.',
     siteUrl: 'https://www.lukaszwojcik.net',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
+    author: 'lwojcik',
+    twitter: '',
     adsense: '',
   },
   pathPrefix: '/',
