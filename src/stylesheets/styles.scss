@@ -1,0 +1,117 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  max-width: 45rem;
+  padding: 2rem;
+  margin: auto;
+  background: #fafafa;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 0.25rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 0.25rem;
+  height: auto;
+  box-shadow: 3px 3px 7px 0 rgba(224, 224, 224, 1);
+}
+
+a {
+  color: #ff0071;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 5px 6px;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+strong {
+  color: #111;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  line-height: 2;
+}
+
+li,
+p {
+  font-size: 1.3rem;
+}
+
+p {
+  line-height: 1.4;
+}
+
+ul {
+  padding: 0;
+  margin-left: -5px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dot {
+  margin: 0 8px;
+}
+
+.main {
+  display: flex;
+}
+
+.photo {
+  flex-shrink: 0;
+  margin-right: 3rem;
+}
+
+a.downloadButton,
+a.downloadButton:visited {
+  margin: 0 0 2rem;
+  display: inline-block;
+  border: 2px solid #ff0071;
+  padding: 5px 20px;
+  font-weight: 900;
+  font-size: 120%;
+  transition: background 0.1s, color 0.1s;
+}
+
+a.downloadButton:focus,
+a.downloadButton:hover {
+  text-decoration: none;
+  background: #ff0071;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: block;
+    text-align: center;
+  }
+
+  .photo {
+    margin-right: 0;
+  }
+
+  h1 {
+    margin-top: 1rem;
+  }
+}
