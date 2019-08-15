@@ -12,7 +12,7 @@ const config = {
   site_name: 'LukaszWojcik.net',
 
   // Your website's description, used for favicon meta tags
-  site_description: 'My homepage',
+  site_description: 'Web developer from Poland. Homepage, contact details',
 
   // Your website's URL, used for sitemap
   site_url: 'https://www.lukaszwojcik.net',
