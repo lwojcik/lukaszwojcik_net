@@ -76,6 +76,11 @@ h1 {
 
 .main {
   display: flex;
+  transition: all 0.3s ease-out;
+}
+
+.main * {
+  transition: all 0.3s ease-out;
 }
 
 .photo {
