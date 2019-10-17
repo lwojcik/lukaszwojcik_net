@@ -82,7 +82,7 @@
     "enquirer": "2.3.2",
     "figlet": "1.2.4",
     "normalize.css": "8.0.1",
-    "reset-css": "4.0.1",
+    "reset-css": "5.0.0",
     "sanitize.css": "11.0.0",
     "webpack-dev-server": "3.8.2"
   }
