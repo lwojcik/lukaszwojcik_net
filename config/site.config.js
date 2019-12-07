@@ -17,9 +17,6 @@ const config = {
   // Your website's URL, used for sitemap
   site_url: 'https://www.lukaszwojcik.net',
 
-  // Google Analytics tracking ID (leave blank to disable)
-  googleAnalyticsUA: '',
-
   // The viewport meta tag added to your HTML page's <head> tag
   viewport: 'width=device-width,initial-scale=1',
 

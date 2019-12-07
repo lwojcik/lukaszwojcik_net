@@ -35,9 +35,6 @@ const js = {
 // Style loaders
 const styleLoader = {
   loader: 'style-loader',
-  options: {
-    sourceMap,
-  },
 };
 
 const cssLoader = {

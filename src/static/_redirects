@@ -1,0 +1,20 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://blog.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://blog.lukaszwojcik.net/* https://www.lukaszwojcik.net/:splat 301!
+https://weblog.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.blog.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.blog.lukaszwojcik.net/* https://www.lukaszwojcik.net/:splat 301!
+https://after.lajf.eu/* https://www.lukaszwojcik.net/:splat 301!
+https://old.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.old.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://english.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.english.lukem.net/* https://www.lukaszwojcik.net/:splat 301!
+https://webpl.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.webpl.net/* https://www.lukaszwojcik.net/:splat 301!
+https://www.lukaszwojcik.com/* https://www.lukaszwojcik.net/:splat 301!
+https://lukaszwojcik.com/* https://www.lukaszwojcik.net/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://lukaszwojcik.netlify.com/* https://www.lukaszwojcik.net/:splat 301!
