@@ -35,7 +35,7 @@
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js"
   },
   "devDependencies": {
-    "@babel/cli": "7.7.5",
+    "@babel/cli": "7.7.7",
     "@babel/core": "7.7.5",
     "@babel/preset-env": "7.7.6",
     "autoprefixer": "9.7.3",
