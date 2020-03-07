@@ -1,0 +1,8 @@
+<ul>{% for link in links %}
+  <li>
+    <a href="{{ link.url }}" title="{{ link.title }} ({{ l18n.opensNewWindow }})" target="_blank" rel="external noopener noreferrer">
+      {{ link.name }}
+    </a>
+  </li>
+{% endfor %}</ul>
+
