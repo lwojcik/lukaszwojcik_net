@@ -3,6 +3,7 @@
   "description": "My homepage",
   "version": "1.0.0",
   "homepage": "https://www.lukaszwojcik.net",
+  "main": "index.html",
   "author": {
     "name": "Łukasz Wójcik",
     "url": "https://www.lukaszwojcik.net"
@@ -20,8 +21,8 @@
     "homepage"
   ],
   "scripts": {
-    "start": "eleventy --serve",
-    "dev": "npm start"
+    "dev": "npx eleventy --watch",
+    "build": "npx eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.10.0"
