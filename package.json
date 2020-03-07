@@ -1,9 +1,8 @@
 {
-  "name": "homepage",
+  "name": "@lwojcik/homepage",
   "description": "My homepage",
   "version": "1.0.0",
   "homepage": "https://www.lukaszwojcik.net",
-  "main": "index.html",
   "author": {
     "name": "Łukasz Wójcik",
     "url": "https://www.lukaszwojcik.net"
