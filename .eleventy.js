@@ -8,15 +8,13 @@ module.exports = function(config) {
   });
 
   config.addTransform("htmlmin", function(content, outputPath) {
-    if(outputPath.endsWith(".html") ) {
-      let minified = htmlmin.minify(content, {
+    if(outputPath.endsWith(".html")) {
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true
       });
-      return minified;
     }
-
     return content;
   });
 
