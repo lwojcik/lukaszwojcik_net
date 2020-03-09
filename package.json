@@ -1,6 +1,7 @@
 {
   "name": "@lwojcik/homepage",
   "description": "My homepage",
+  "private": true,
   "version": "1.0.0",
   "homepage": "https://www.lukaszwojcik.net",
   "author": {
