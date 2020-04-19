@@ -16,6 +16,7 @@ https://lukaszwojcik.com/* https://www.lukaszwojcik.net/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://lukaszwojcik.netlify.com/* https://www.lukaszwojcik.net/:splat 301!
+https://lukaszwojcik.netlify.app/* https://www.lukaszwojcik.net/:splat 301!
 
 # My redirects
 
