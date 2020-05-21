@@ -2,9 +2,5 @@ language: node_js
 os: linux
 dist: bionic
 node_js: 'lts/*'
-
-install:
-  - npm install
-
-script:
-  - npm run build
+install: npm install
+script: npm run build
