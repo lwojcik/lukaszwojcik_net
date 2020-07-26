@@ -63,6 +63,11 @@ module.exports = function() {
         title: "My profile on LinkedIn"
       },
       {
+        name: "Sourcerer",
+        url: "https://sourcerer.io/lwojcik",
+        title: "My profile on Sourcerer",
+      },
+      {
         name: "Stack Overflow",
         url: "https://stackoverflow.com/users/story/4741678",
         title: "My profile on Star Overflow",
