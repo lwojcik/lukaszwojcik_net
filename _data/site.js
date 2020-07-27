@@ -69,7 +69,7 @@ module.exports = function() {
       },
       {
         name: "Stack Overflow",
-        url: "https://stackoverflow.com/users/story/4741678",
+        url: "https://stackoverflow.com/story/lukaszwojcik",
         title: "My profile on Star Overflow",
       },
       {
