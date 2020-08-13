@@ -1,7 +1,22 @@
 pull_request_rules:
-  - name: Automatic merge on approval
+  - name: Automatic merge of Snyk dependency upgrades
     conditions:
-      - "#approved-reviews-by>=1"
+      - "author=snyk-bot"
+      - "-conflict"
+      - "status-success=continuous-integration/travis-ci/pr"
+      - "status-success=continuous-integration/travis-ci/push"
+      - "status-success=security/snyk (lukemnet)"
+    actions:
+      merge:
+        method: squash
+        strict: true
+  - name: Automatic merge of Dependabot dependency upgrades
+    conditions:
+      - "author=dependabot[bot]"
+      - "-conflict"
+      - "status-success=continuous-integration/travis-ci/pr"
+      - "status-success=continuous-integration/travis-ci/push"
+      - "status-success=security/snyk (lukemnet)"
     actions:
       merge:
         method: squash
