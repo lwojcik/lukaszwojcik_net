@@ -1,4 +1,5 @@
-# @lwojcik/homepage
-[![Travis Build Status](https://travis-ci.com/lwojcik/homepage.svg?branch=master)](https://travis-ci.com/lwojcik/homepage)
+# @lukemnet/homepage
 
-[My homepage](https://www.lukaszwojcik.net). Static website built with [Eleventy](https://www.11ty.dev/).
+My [business homepage](https://www.lukem.net) - static site built with [11ty](https://www.11ty.dev/).
+
+© 2020 Łukasz Wójcik
