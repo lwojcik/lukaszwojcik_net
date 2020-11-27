@@ -1,5 +1,7 @@
 (() => {
   const camera = () => {
+    const transitionTime = 1000;
+
     const windowWidth = document.body.offsetWidth;
     const cardButton = document.querySelector("#card-button");
     const codeButton = document.querySelector("#code-button");
@@ -23,29 +25,29 @@
     });
 
     camera.focus(hero);
-    camera.update(2000);
+    camera.update(transitionTime);
 
     cardButton.onclick = () => {
       camera.focus(card);
-      camera.update(2000);
+      camera.update(transitionTime);
       restoreButtons();
       cardButton.classList.remove("is-outlined");
     }
     codeButton.onclick = () => {
       camera.focus(code);
-      camera.update(2000);
+      camera.update(transitionTime);
       restoreButtons();
       codeButton.classList.remove("is-outlined");
     }
     heroButton.onclick = () => {
       camera.focus(hero);
-      camera.update(2000);
+      camera.update(transitionTime);
       restoreButtons();
       heroButton.classList.remove("is-outlined");
     }
     moreButton.onclick = () => {
       camera.focus(more);
-      camera.update(2000);
+      camera.update(transitionTime);
       restoreButtons();
       moreButton.classList.remove("is-outlined");
     }

@@ -17,26 +17,11 @@
     {% include "meta/seo.njk" %}    
   </head>
   <body class="{{ type or 'index' }} page-{{ slug }}">
-  <div id="space">
+    <div id="space">
       <section id="hero" class="hero is-white is-fullheight">
         <div class="hero-body">
           <div class="container has-text-centered">
             <h1 class="title"><i class="fas fa-camera-retro"></i> CSS-CAMERA</h1>
-            <h2 class="subtitle">Add depth to your web page with CSS3 3D transform.</h2>
-            <a class="button is-white" href="./release/latest/docs/index.html">
-              <span class="icon"><i class="fas fa-book"></i></span>
-              <span>Documents</span>
-            </a>
-            <a class="button is-white" href="https://github.com/WoodNeck/css-camera">
-              <span class="icon"><i class="fab fa-github"></i></span>
-              <span>Github</span>
-            </a>
-          </div>
-        </div>
-        <div class="container is-fluid">
-          <div class="container">
-            <h1 class="title"><i class="fas fa-cog"></i> Install</h1>
-            <div class="notification">$ npm i css-camera</div>
           </div>
         </div>
       </section>
@@ -97,9 +82,11 @@ cardButton.onclick = () => {
       <div class="page-header-buttons">
         <span>🎥</span>
         <a id="hero-button" class="button is-link">Main</a>
-        <a id="card-button" class="button is-link is-outlined">Card</a>
-        <a id="code-button" class="button is-link is-outlined">Code</a>
-        <a id="more-button" class="button is-link is-outlined">More</a>
+        <a id="card-button" class="button is-link is-outlined">About me</a>
+        <a id="code-button" class="button is-link is-outlined">Software</a>
+        <a id="more-button" class="button is-link is-outlined">Photography</a>
+        <a id="more-button2" class="button is-link is-outlined">Writing</a>
+        <a id="more-button3" class="button is-link is-outlined">Contact</a>
       </div>
     </header>
     {# <div class="wrapper">
