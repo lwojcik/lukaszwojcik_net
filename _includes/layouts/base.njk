@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if title %}{{ title }} - {% endif %}Lukem.net</title>
+    <title>{{ title }}</title>
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href='/styles/main.css'>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -17,15 +17,45 @@
     {% include "meta/seo.njk" %}    
   </head>
   <body class="{{ type or 'index' }} page-{{ slug }}">
+    <header class="header">
+      <menu>
+
+            <a class="logo" tabindex="0" href="" id="button-main">
+              <img src="/images/logo.png" alt="Łukasz Wójcik" />
+            </a>
+
+            <a tabindex="0" class="" href="#2" id="button-about">
+              About me
+            </a>
+
+            <a tabindex="0" class="" href="#3" id="button-software">
+              Software
+            </a>
+
+            <a tabindex="0" class="" href="#5" id="button-writing">
+              Writing
+            </a>
+
+            <a tabindex="0" class="" href="#4" id="button-photography">
+              Photography
+            </a>
+
+            <a tabindex="0" class="" href="#6" id="button-contact">
+              Contact
+            </a>
+
+      </menu>
+    </header>
     <div id="space">
-      <section id="hero" class="hero is-white is-fullheight">
+      <section id="section-main" class="hero is-white is-fullheight">
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="title"><i class="fas fa-camera-retro"></i> CSS-CAMERA</h1>
+            <h1>Łukasz Wójcik</h1>
           </div>
         </div>
       </section>
-      <div id="card" class="container">
+
+      <div id="section-about" class="container">
         <div class="card-wrapper">
           <div class="card">
             <div class="card-image">
@@ -54,51 +84,8 @@
           </div>
         </div>
       </div>
-      <div id="code" class="container">
-        <h1 class="title">It's super simple!</h1>
-        <pre><code class="camera-code js">// Prerequisite:
-// Create your scene as you like
-const card = document.querySelector("#card");
-const cardButton = document.querySelector("#card-button");
 
-// First, make camera
-const camera = new CSSCamera("#space");
-
-// Call its method, then update it!
-cardButton.onclick = () => {
-  // Move camera in front of "card"
-  camera.focus(card);
-  camera.update(2000);
-}</code></pre>
-        <h1 class="title is-size-5-mobile">See the <a href="https://github.com/WoodNeck/css-camera/blob/master/demo/js/index.js">source</a> of this page.</h1>
-      </div>
-
-      <div id="more" class="container">
-        <h1 class="title has-text-centered">More demos?</h1>
-        more
-      </div>
     </div>
-    <header class="page-header-container">
-      <div class="page-header-buttons">
-        <span>🎥</span>
-        <a id="hero-button" class="button is-link">Main</a>
-        <a id="card-button" class="button is-link is-outlined">About me</a>
-        <a id="code-button" class="button is-link is-outlined">Software</a>
-        <a id="more-button" class="button is-link is-outlined">Photography</a>
-        <a id="more-button2" class="button is-link is-outlined">Writing</a>
-        <a id="more-button3" class="button is-link is-outlined">Contact</a>
-      </div>
-    </header>
-    {# <div class="wrapper">
-      {% include "partials/header.njk" %}
-      {{ content | safe }}
-    </div>
-    <div id="space">
-      <div id="card">Card</div>
-
-
-      <div id="card-button">Card button</div>
-    </div> #}
     {% include "partials/scripts/common.njk" %}
   </body>
 </html>

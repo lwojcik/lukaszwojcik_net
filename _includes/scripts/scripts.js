@@ -1,60 +1,41 @@
 (() => {
-  const camera = () => {
-    const transitionTime = 1000;
+  const transitionTime = 1000;
 
-    const windowWidth = document.body.offsetWidth;
-    const cardButton = document.querySelector("#card-button");
-    const codeButton = document.querySelector("#code-button");
-    const heroButton = document.querySelector("#hero-button");
-    const moreButton = document.querySelector("#more-button");
-    const buttons = [
-      cardButton, codeButton, heroButton, moreButton,
+  const windowWidth = document.body.offsetWidth;
+
+  const camera = new CSSCamera("#space", {
+    perspective: windowWidth / 2,
+  });
+
+  const jumpTo = (name) => {
+    const button = document.querySelector("#button-"+name);
+    const section = document.querySelector("#section-"+name);
+    console.log(section);
+    camera.focus(section);
+    camera.update(transitionTime);
+  }
+
+  const launchCamera = () => {
+    const buttonNames = [
+      'main',
+      'about',
+      'software',
+      'writing',
+      'photography',
+      'contact'
     ];
 
-    const card = document.querySelector("#card");
-    const code = document.querySelector("#code");
-    const hero = document.querySelector("#hero");
-    const more = document.querySelector("#more");
+    jumpTo('main');
 
-    const restoreButtons = () => {
-      buttons.forEach(button => button.classList.add("is-outlined"));
-    }
-
-    const camera = new CSSCamera("#space", {
-      perspective: windowWidth / 2,
-    });
-
-    camera.focus(hero);
-    camera.update(transitionTime);
-
-    cardButton.onclick = () => {
-      camera.focus(card);
-      camera.update(transitionTime);
-      restoreButtons();
-      cardButton.classList.remove("is-outlined");
-    }
-    codeButton.onclick = () => {
-      camera.focus(code);
-      camera.update(transitionTime);
-      restoreButtons();
-      codeButton.classList.remove("is-outlined");
-    }
-    heroButton.onclick = () => {
-      camera.focus(hero);
-      camera.update(transitionTime);
-      restoreButtons();
-      heroButton.classList.remove("is-outlined");
-    }
-    moreButton.onclick = () => {
-      camera.focus(more);
-      camera.update(transitionTime);
-      restoreButtons();
-      moreButton.classList.remove("is-outlined");
-    }
+    buttonNames.map(name => {
+      document.querySelector("#button-"+name).onclick = () => {
+        jumpTo(name);
+      };
+    })
   }
 
   const start = () => {
-    camera();
+    launchCamera();
   }
 
   start();
