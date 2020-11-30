@@ -14,77 +14,18 @@
     <meta name="msapplication-TileColor" content="#005182">
     <meta name="theme-color" content="#ffffff">
     <meta name="mobile-web-app-capable" content="yes">
-    {% include "meta/seo.njk" %}    
+    {% include "meta/seo.njk" %}
   </head>
-  <body class="{{ type or 'index' }} page-{{ slug }}">
-    <header class="header">
-      <menu>
+  <body>
+    {% include "partials/header.njk" %}
 
-            <a class="logo" tabindex="0" href="" id="button-main">
-              <img src="/images/logo.png" alt="Łukasz Wójcik" />
-            </a>
-
-            <a tabindex="0" class="" href="#2" id="button-about">
-              About me
-            </a>
-
-            <a tabindex="0" class="" href="#3" id="button-software">
-              Software
-            </a>
-
-            <a tabindex="0" class="" href="#5" id="button-writing">
-              Writing
-            </a>
-
-            <a tabindex="0" class="" href="#4" id="button-photography">
-              Photography
-            </a>
-
-            <a tabindex="0" class="" href="#6" id="button-contact">
-              Contact
-            </a>
-
-      </menu>
-    </header>
     <div id="space">
-      <section id="section-main" class="hero is-white is-fullheight">
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1>Łukasz Wójcik</h1>
-          </div>
-        </div>
-      </section>
-
-      <div id="section-about" class="container">
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <p>empty</p>
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="https://avatars0.githubusercontent.com/u/26213435?s=460&v=4" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">WoodNeck</p>
-                  <p class="subtitle is-6">@woodneck</p>
-                </div>
-              </div>
-
-              <div class="content">
-                You can put any HTML element you like, then just transform it.
-                <a href="https://github.com/WoodNeck/css-camera">@css-camera</a> will do the rest for you.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      {% include "sections/main.njk" %}
+      {% include "sections/about.njk" %}
+      {% include "sections/software.njk" %}
+      {% include "sections/writing.njk" %}
+      {% include "sections/photography.njk" %}
+      {% include "sections/contact.njk" %}
     </div>
     {% include "partials/scripts/common.njk" %}
   </body>
