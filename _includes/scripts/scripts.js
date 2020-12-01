@@ -6,56 +6,88 @@
     perspective: windowWidth / 2,
   });
 
-  const getSectionName = (url) => {
-    return url === '/'
+  const suffix = ' – Łukasz Wójcik';
+
+  const sections = [
+    {
+      name: 'main',
+      title: 'Łukasz Wójcik – web developer',
+    },
+    {
+      name: 'about',
+      title: 'About me' + suffix,
+    },
+    {
+      name: 'software',
+      title: 'Software' + suffix,
+    },
+    {
+      name: 'writing',
+      title: 'Writing' + suffix,
+    },
+    {
+      name: 'photography',
+      title: 'Photography' + suffix,
+    },
+    {
+      name: 'contact',
+      title: 'Contact' + suffix,
+    },
+  ];
+
+  const getSectionNames = () =>
+    sections.map(section => section.name);
+
+  const getSectionName = (url) =>
+    url === '/'
       ? 'main'
       : url.split('/')[1];
-  }
 
-  const getSectionUrl = (name) => {
-    return name === 'main'
+  const getSectionUrl = (sectionName) =>
+    sectionName === 'main' || !sectionName
       ? '/'
-      : '/' + name + '/';
+      : '/' + sectionName + '/';
+
+  const setPageTitle = (sectionName) => {
+    const pageTitle = sections.filter(section =>
+      section.name === sectionName)[0].title;
+    document.title = pageTitle;
   }
 
-  const pushToHistory = (name) => {
-    const url = getSectionUrl(name);
-    if(typeof history.pushState === 'function') {
-      history.pushState({ section: name }, name, url);
+  const pushToHistory = (sectionName) => {
+    const url = getSectionUrl(sectionName);
+    if(history && typeof history.pushState === 'function') {
+      history.pushState({ section: sectionName }, sectionName, url);
     }
   }
 
-  const jumpTo = (name) => {
-    const section = document.querySelector("#section-"+name);
+  const jumpTo = (sectionName) => {
+    const section = document.querySelector("#section-"+sectionName);
     camera.focus(section);
     camera.update(transitionTime);
   }
 
   const launchCamera = () => {
-    const buttonNames = [
-      'main',
-      'about',
-      'software',
-      'writing',
-      'photography',
-      'contact'
-    ];
-
+    const buttonNames = getSectionNames();
     const sectionName = getSectionName(window.location.pathname);
+
     jumpTo(sectionName);
 
-    buttonNames.map(name => {
-      document.querySelector("#button-"+name).onclick = (event) => {
+    buttonNames.map(buttonName => {
+      document.querySelector("#button-"+buttonName).onclick = (event) => {
         event.preventDefault();
-        pushToHistory(name);
-        jumpTo(name);
+        setPageTitle(buttonName);
+        pushToHistory(buttonName);
+        jumpTo(buttonName);
       };
     })
   }
 
   window.onpopstate = function(event) {
     if (event.state && event.state.section) {
-      jumpTo(event.state.section);
+      const sectionName = event.state.section;
+      setPageTitle(sectionName);
+      jumpTo(sectionName);
     }
   }
 
