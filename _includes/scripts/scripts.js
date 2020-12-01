@@ -6,12 +6,12 @@
     perspective: windowWidth / 2,
   });
 
-  const suffix = ' – Łukasz Wójcik';
+  const suffix = ' | Łukasz Wójcik';
 
   const sections = [
     {
       name: 'main',
-      title: 'Łukasz Wójcik – web developer',
+      title: 'Łukasz Wójcik - web developer',
     },
     {
       name: 'about',
