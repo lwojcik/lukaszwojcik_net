@@ -4,23 +4,23 @@
       <img src="/images/logo.png" alt="Łukasz Wójcik" />
     </a>
 
-    <a href="/about/" id="button-about">
+    <a href="/about/" class="{% if slug === 'about' %}selected{% endif %}" id="button-about">
       About me
     </a>
 
-    <a href="/software/" id="button-software">
+    <a href="/software/" class="{% if slug === 'software' %}selected{% endif %}" id="button-software">
       Software
     </a>
 
-    <a href="/writing/" id="button-writing">
+    <a href="/writing/" class="{% if slug === 'writing' %}selected{% endif %}" id="button-writing">
       Writing
     </a>
 
-    <a href="/photography/" id="button-photography">
+    <a href="/photography/" class="{% if slug === 'photography' %}selected{% endif %}" id="button-photography">
       Photography
     </a>
 
-    <a href="/contact/" id="button-contact">
+    <a href="/contact/" class="{% if slug === 'contact' %}selected{% endif %}" id="button-contact">
       Contact
     </a>
   </menu>

@@ -62,9 +62,14 @@
   }
 
   const jumpTo = (sectionName) => {
-    const section = document.querySelector("#section-"+sectionName);
+    const section = document.querySelector('#section-'+sectionName);
     camera.focus(section);
     camera.update(transitionTime);
+  }
+
+  const switchSelection = (sectionName) => {
+    document.querySelector('menu a.selected').classList.remove('selected');
+    document.querySelector('menu a#button-'+sectionName).classList.add('selected');
   }
 
   const launchCamera = () => {
@@ -78,6 +83,7 @@
         event.preventDefault();
         setPageTitle(buttonName);
         pushToHistory(buttonName);
+        switchSelection(buttonName);
         jumpTo(buttonName);
       };
     })
