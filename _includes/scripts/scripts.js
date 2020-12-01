@@ -68,7 +68,10 @@
   }
 
   const switchSelection = (sectionName) => {
-    document.querySelector('menu a.selected').classList.remove('selected');
+    const selectedItem = document.querySelector('menu a.selected');
+    if (selectedItem) {
+      selectedItem.classList.remove('selected');
+    }
     document.querySelector('menu a#button-'+sectionName).classList.add('selected');
   }
 
