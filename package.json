@@ -1,7 +1,7 @@
 {
-  "name": "@lukemnet/homepage",
+  "name": "@lwojcik/homepage",
   "version": "1.0.0",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "description": "My homepage",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "start": "npm run dev",
