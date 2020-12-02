@@ -4,24 +4,31 @@
       <img src="/images/logo.png" alt="Łukasz Wójcik" />
     </a>
 
-    <a href="/about/" class="{% if slug === 'about' %}selected{% endif %}" id="button-about">
-      About me
-    </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn">
+    <label class="menu-icon" for="menu-btn">
+      <span class="navicon"></span>
+    </label>
 
-    <a href="/software/" class="{% if slug === 'software' %}selected{% endif %}" id="button-software">
-      Software
-    </a>
+    <span class="items">
+      <a href="/about/" class="{% if slug === 'about' %}selected{% endif %}" id="button-about">
+        About me
+      </a>
 
-    <a href="/writing/" class="{% if slug === 'writing' %}selected{% endif %}" id="button-writing">
-      Writing
-    </a>
+      <a href="/software/" class="{% if slug === 'software' %}selected{% endif %}" id="button-software">
+        Software
+      </a>
 
-    <a href="/photography/" class="{% if slug === 'photography' %}selected{% endif %}" id="button-photography">
-      Photography
-    </a>
+      <a href="/writing/" class="{% if slug === 'writing' %}selected{% endif %}" id="button-writing">
+        Writing
+      </a>
 
-    <a href="/contact/" class="{% if slug === 'contact' %}selected{% endif %}" id="button-contact">
-      Contact
-    </a>
+      <a href="/photography/" class="{% if slug === 'photography' %}selected{% endif %}" id="button-photography">
+        Photography
+      </a>
+
+      <a href="/contact/" class="{% if slug === 'contact' %}selected{% endif %}" id="button-contact">
+        Contact
+      </a>
+    </span>
   </menu>
 </header>

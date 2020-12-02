@@ -1,5 +1,13 @@
 #section-about
-  border: 1px solid black
+  .image
+    width: 200px
+    height: 200px
+    border: 1px solid #ededed
 
-  .card
-    background: yellow
+@include mobile
+  #section-about
+    .box
+      padding-top: 90px
+      max-height: 100vh
+      overflow-x: hidden
+      overflow-y: auto
