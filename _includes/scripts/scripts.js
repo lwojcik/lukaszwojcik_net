@@ -1,5 +1,10 @@
 (() => {
-  const transitionTime = 1000;
+  const isReducedMotion = () => {
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    return !query || query.matches;
+  }
+
+  const transitionTime = isReducedMotion() ? 0 : 1000;
   const windowWidth = document.body.offsetWidth;
 
   const camera = new CSSCamera("#space", {

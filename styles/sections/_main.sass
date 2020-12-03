@@ -4,9 +4,19 @@
     font-weight: bold
 
   .image img
-      border: 1px solid #ededed
-      width: 200px
-      height: 200px
-      display: inline-block
-      text-align: center
-      box-shadow: 3px 3px 7px 0 #e0e0e0
+    user-select: none
+    border: 1px solid #ededed
+    width: 200px
+    height: 200px
+    display: inline-block
+    text-align: center
+    box-shadow: 3px 3px 7px 0 #e0e0e0
+
+@media (prefers-color-scheme: dark)
+  #section-main
+    h1
+      color: #fff
+  
+    .image img
+      border-color: #333
+      box-shadow: 3px 3px 7px 0 #333
