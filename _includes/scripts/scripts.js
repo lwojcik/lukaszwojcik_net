@@ -84,8 +84,6 @@
     const buttonNames = getSectionNames();
     const sectionName = getSectionName(window.location.pathname);
 
-    jumpTo(sectionName);
-
     buttonNames.map(buttonName => {
       document.querySelector("#button-"+buttonName).onclick = (event) => {
         event.preventDefault();
@@ -94,7 +92,9 @@
         switchSelection(buttonName);
         jumpTo(buttonName);
       };
-    })
+    });
+
+    jumpTo(sectionName);
   }
 
   window.onpopstate = function(event) {
@@ -105,8 +105,18 @@
     }
   }
 
+  const kitteh = () => {
+    document.querySelector('#section-main img').src = "/images/photo2.jpg";
+  }
+
+  const konami = () => {
+    const easter_egg = new Konami();
+    easter_egg.code = kitteh;
+    easter_egg.load();
+  };
   const start = () => {
     launchCamera();
+    konami();
   }
 
   start();
