@@ -20,12 +20,7 @@
     {% include "partials/header.njk" %}
 
     <div id="space">
-      {% include "sections/main.njk" %}
-      {% include "sections/about.njk" %}
-      {% include "sections/software.njk" %}
-      {% include "sections/writing.njk" %}
-      {% include "sections/photography.njk" %}
-      {% include "sections/contact.njk" %}
+      {{content|safe}}
     </div>
     {% include "partials/scripts/common.njk" %}
   </body>
