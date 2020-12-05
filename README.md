@@ -1,5 +1,5 @@
-# @lukemnet/homepage
+# @lwojcik/homepage
 
-My [business homepage](https://www.lukem.net) - static site built with [11ty](https://www.11ty.dev/).
+My [personal homepage](https://www.lukaszwojcik.net) - static website built with [11ty](https://www.11ty.dev/).
 
 © 2020 Łukasz Wójcik
