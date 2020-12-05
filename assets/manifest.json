@@ -3,9 +3,9 @@
     "background_color": "#005182",
     "display": "browser",
     "scope": "/",
-    "start_url": "https://www.lukem.net",
-    "app_name": "Lukem.net",
-    "short_name": "LM",
+    "start_url": "https://www.lukaszwojcik.net",
+    "app_name": "Łukasz Wójcik",
+    "short_name": "Łukasz Wójcik",
     "icons": [
         {
             "src": "/icon-192x192.png",
