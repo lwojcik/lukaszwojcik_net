@@ -1,6 +1,6 @@
 (() => {
   const kitteh = () => {
-    document.querySelector('#section-main img').src = "/images/photo2.jpg";
+    document.querySelector('.section-main img').src = "/images/photo2.jpg";
   }
 
   const konami = () => {

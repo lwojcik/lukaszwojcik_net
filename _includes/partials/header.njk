@@ -1,34 +1,40 @@
 <header class="header">
+  <a href="/" class="logo" id="button-main">
+    <img src="/images/logo.png" alt="Łukasz Wójcik" />
+  </a>
+
+  <input class="menu-btn" type="checkbox" id="menu-btn">
+  <label class="menu-icon" for="menu-btn">
+    <span class="navicon"></span>
+  </label>
+
   <menu>
-    <a href="/" class="logo" id="button-main">
-      <img src="/images/logo.png" alt="Łukasz Wójcik" />
-    </a>
-
-    <input class="menu-btn" type="checkbox" id="menu-btn">
-    <label class="menu-icon" for="menu-btn">
-      <span class="navicon"></span>
-    </label>
-
-    <span class="items">
-      <a href="/about/" class="{% if slug === 'about' %}selected{% endif %}" id="button-about">
+  <ul>
+    <li>
+      <a href="/about/" class="{% if slug === 'about' %}selected{% endif %}">
         About me
       </a>
-
-      <a href="/software/" class="{% if slug === 'software' %}selected{% endif %}" id="button-software">
+    </li>
+    <li>
+      <a href="/software/" class="{% if slug === 'software' %}selected{% endif %}">
         Software
       </a>
-
-      <a href="/writing/" class="{% if slug === 'writing' %}selected{% endif %}" id="button-writing">
+    </li>
+    <li>
+      <a href="/writing/" class="{% if slug === 'writing' %}selected{% endif %}">
         Writing
       </a>
-
-      <a href="/photography/" class="{% if slug === 'photography' %}selected{% endif %}" id="button-photography">
+    </li>
+    <li>
+      <a href="/photography/" class="{% if slug === 'photography' %}selected{% endif %}">
         Photography
       </a>
-
-      <a href="/contact/" class="{% if slug === 'contact' %}selected{% endif %}" id="button-contact">
+    </li>
+    <li>
+      <a href="/contact/" class="{% if slug === 'contact' %}selected{% endif %}">
         Contact
       </a>
-    </span>
+    </li>
+  </ul>
   </menu>
 </header>

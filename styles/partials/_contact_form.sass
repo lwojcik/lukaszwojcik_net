@@ -1,11 +1,11 @@
 .mauticform_wrapper
-  margin: 20px auto
-
-.mauticform-innerform, .mauticform-post-success
+  margin: 0 auto
+  width: 100%
+  padding: 0 24px
+  background: #ededed
 
 .mauticform-name
   font-weight: bold
-  font-size: 1.5em
   margin-bottom: 3px
 
 .mauticform-description
@@ -13,31 +13,35 @@
   margin-bottom: 10px
 
 .mauticform-error
-  margin-bottom: 10px
   color: red
 
 .mauticform-message
-  margin-bottom: 10px
   color: green
+
+.mauticform-innerform
+  margin-top: 20px
 
 .mauticform-row
   display: block
   margin-bottom: 20px
 
 .mauticform-label
-  font-size: 1.1em
   display: block
   font-weight: bold
   margin-bottom: 5px
 
-.mauticform-row.mauticform-required .mauticform-label:after
+.mauticform-row.mauticform-required
+.mauticform-label:after
   color: #e32
   content: " *"
   display: inline
 
+span.asterisk
+  font-weight: bold
+  color: #e32
+
 .mauticform-helpmessage
   display: block
-  font-size: 0.9em
   margin-bottom: 3px
 
 .mauticform-errormsg
@@ -56,6 +60,9 @@
   border-radius: 4px
   box-sizing: border-box
 
+.mauticform-input
+  max-width: 400px
+
 .mauticform-textarea
   height: 200px
 
@@ -70,9 +77,8 @@
 .mauticform-radiogrp-radio
 
 .mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default
-  color: #5d6c7c
-  background-color: #ffffff
-  border-color: #dddddd
+  color: #fff
+  background-color: $pinkLight
 
 .mauticform-button-wrapper .mauticform-button,
 .mauticform-pagebreak-wrapper .mauticform-pagebreak
@@ -86,7 +92,6 @@
   border: 1px solid transparent
   white-space: nowrap
   padding: 6px 12px
-  font-size: 13px
   line-height: 1.3856
   border-radius: 3px
   -webkit-user-select: none
@@ -94,10 +99,17 @@
   -ms-user-select: none
   user-select: none
 
+.mauticform-button-wrapper .mauticform-button.btn-default
+  transition: opacity .2s
+  font-size: 20px
+  padding: 10px 20px
+
+.mauticform-button-wrapper .mauticform-button.btn-default:hover,
+.mauticform-button-wrapper .mauticform-button.btn-default:focus
+  opacity: 0.6
+
 .mauticform-button-wrapper .mauticform-button.btn-default[disabled]
-  background-color: #ffffff
-  border-color: #dddddd
-  opacity: 0.75
+  opacity: 0.3
   cursor: not-allowed
 
 .mauticform-pagebreak-wrapper
