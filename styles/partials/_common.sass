@@ -1,13 +1,13 @@
+html,
 body
-  background: $bgColorLight
-  color: $textColorLight
-  max-width: 48rem
-  padding: 0
-  min-height: 100%
-  margin: 0 auto
-  font-size: 20px
+  height: 100%
 
 body
+  background: $bgColorLight
+  max-width: 48rem
+  padding: 0
+  margin: 0 auto
+  font-size: 20px
   font-family: "Lato", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,Helvetica,Arial,sans-serif
   letter-spacing: -.5px
   color: $textColorLight
@@ -62,7 +62,9 @@ a
 
   p
     line-height: 1.5
-    margin-bottom: 1.5rem
+
+    &:not(:last-child)
+      margin-bottom: 1.5rem
 
   a.highlight
     display: inline-block
@@ -86,7 +88,7 @@ a
 +mobile
   .content
     padding-top: 72px
-    min-height: calc(100vh - 48px)
+    min-height: calc(100% - 48px)
 
     h2
       font-size: 1.4em
