@@ -1,14 +1,15 @@
 ---
-layout: page
-title: Łukasz Wójcik — web developer
-description: Web developer based in Warsaw, Poland. Homepage, contact details
-locale: en
+title: Łukasz Wójcik - web developer
+layout: base
+permalink: /
+slug: index
+description: Experienced frontend and JavaScript web developer from Warsaw, Poland.
 ---
-{% set photo = site.photo %}
-{% set location = site.location %}
-{% set email = site.email %}
-{% set links = site.links %}
-<section class="main">
-{% include "partials/photo.njk" %}
-{% include "partials/content.njk" %}
-</section>
+
+<div class="section-main">
+  <p class="image">
+    <img src="/images/photo.jpg" class="photo" alt="My photo" />
+  </p>
+  <h1>Hi, I'm Łukasz</h1>
+  <p>I'm a web developer. I make things happen with software.</p>
+</div>

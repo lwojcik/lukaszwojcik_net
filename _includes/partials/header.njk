@@ -1,0 +1,40 @@
+<header class="header">
+  <a href="/" class="logo" id="button-main">
+    <img src="/images/logo.png" alt="Łukasz Wójcik" />
+  </a>
+
+  <input class="menu-btn" type="checkbox" id="menu-btn">
+  <label class="menu-icon" for="menu-btn">
+    <span class="navicon"></span>
+  </label>
+
+  <menu>
+  <ul>
+    <li>
+      <a href="/about/" class="{% if slug === 'about' %}selected{% endif %}">
+        About me
+      </a>
+    </li>
+    <li>
+      <a href="/software/" class="{% if slug === 'software' %}selected{% endif %}">
+        Software
+      </a>
+    </li>
+    <li>
+      <a href="/writing/" class="{% if slug === 'writing' %}selected{% endif %}">
+        Writing
+      </a>
+    </li>
+    <li>
+      <a href="/photography/" class="{% if slug === 'photography' %}selected{% endif %}">
+        Photography
+      </a>
+    </li>
+    <li>
+      <a href="/contact/" class="{% if slug === 'contact' %}selected{% endif %}">
+        Contact
+      </a>
+    </li>
+  </ul>
+  </menu>
+</header>

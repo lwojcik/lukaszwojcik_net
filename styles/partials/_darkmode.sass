@@ -1,0 +1,56 @@
++darkmode
+  body,
+  header
+    background: $bgColorDark
+
+  a
+    color: $pinkDark
+
+  header menu a:hover,
+  header menu a:focus,
+  header menu a.selected
+    background-color: $pinkDark
+    color: $menuLinkHoverColorDark
+
+  .content
+    h1,
+    h2,
+    h3,
+    p
+      color: #ededed
+
+    img
+      box-shadow: 3px 3px 7px 0 #666
+
+    a.highlight
+      color: $pinkDark
+      border-color: $pinkDark
+
+      &:hover,
+      &:focus
+        background-color: $pinkDark
+        color: $menuLinkHoverColorDark
+
+  .mauticform_wrapper
+    background: #333
+
+    .mauticform-label
+      color: $menuLinkHoverColorDark
+
+    .mauticform-input,
+    .mauticform-textarea
+      background: $bgColorDark
+      color: $menuLinkHoverColorDark
+
+    .mauticform-button-wrapper .mauticform-button.btn-default
+      background-color: $pinkDark
+      color: $menuLinkHoverColorDark
+  
+  +mobile
+    header
+      box-shadow: 0 5px 7px 0 rgba(60,60,60,.1)
+
+      .menu-icon .navicon,
+      .menu-icon .navicon:after,
+      .menu-icon .navicon:before
+        background: #ededed
