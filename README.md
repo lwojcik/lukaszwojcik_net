@@ -3,4 +3,4 @@
 
 My [personal homepage](https://www.lukaszwojcik.net) - static website built with [11ty](https://www.11ty.dev/).
 
-© 2009-2021 Łukasz Wójcik
+© 2009-2021 [Łukasz Wójcik](https://www.lukaszwojcik.net)
