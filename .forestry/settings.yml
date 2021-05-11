@@ -7,15 +7,24 @@ sections:
 - type: document
   path: index.njk
   label: Index
-  match: "**/*"
 - type: document
   path: about.njk
-  label: About
+  label: About me
+- type: document
+  path: software.njk
+  label: Software
+  match: "**/*"
+- type: document
+  path: writing.njk
+  label: Writing
+  match: "**/*"
+- type: document
+  path: photography.njk
+  label: Photography
   match: "**/*"
 - type: document
   path: contact.njk
   label: Contact
-  match: "**/*"
 upload_dir: assets/images
 public_path: "/images"
 front_matter_path: ''
