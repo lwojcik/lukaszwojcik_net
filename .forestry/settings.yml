@@ -5,25 +5,22 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: index.njk
+  path: "./index.njk"
   label: Index
 - type: document
-  path: about.njk
+  path: "./about.njk"
   label: About me
 - type: document
-  path: software.njk
+  path: "./software.njk"
   label: Software
-  match: "**/*"
 - type: document
-  path: writing.njk
+  path: "./writing.njk"
   label: Writing
-  match: "**/*"
 - type: document
-  path: photography.njk
+  path: "./photography.njk"
   label: Photography
-  match: "**/*"
 - type: document
-  path: contact.njk
+  path: "./contact.njk"
   label: Contact
 upload_dir: assets/images
 public_path: "/images"
