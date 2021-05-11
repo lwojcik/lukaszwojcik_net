@@ -8,6 +8,14 @@ sections:
   path: index.njk
   label: Index
   match: "**/*"
+- type: document
+  path: about.njk
+  label: About
+  match: "**/*"
+- type: document
+  path: contact.njk
+  label: Contact
+  match: "**/*"
 upload_dir: assets/images
 public_path: "/images"
 front_matter_path: ''
